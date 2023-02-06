@@ -1,2 +1,0 @@
-# Webdevlopment
-Homeworks and Projects
