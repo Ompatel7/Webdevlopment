@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Form</title>
+    <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon">
+ 
+</head>
+<body>
+    <form action="Second.html">
+    <h1 style="text-align: center;"><U>PAYMENT FORM</U> </h1>
+    <h2>PERSNOL INFORMATION  </h2><BR>
+    <p>First Name : * <input type="text" name="name" required></p>
+    <p>Last Name : <input type="text" name="name"></p>
+    <p>Date of Birth : * <input type="date" name="DOB" id="DOB" required></p>
+    <p>Gender : Male<input type="radio" name="Gender">Female <input type="radio" name="Gender" id="Gender"></p>
+    <p>Contect Number : * <input type="number" name="Number" id="Number" required></p>
+    <p>Upload Any Document : *</p> <input type="file" name="Document" id="Document" required>
+    <p>Email : * <input type="email" name="email" id="email" required></p>
+    <p>Address : <textarea name="Address" id="S" cols="30" rows="7"></textarea> </p><hr>
+    <h2>Card INFORMATION</h2>
+    <p>Card Type : 
+    <select name="card_type" id="card_type">
+        <option value="">--selact a card type--</option>
+        <option value="visa">visa</option>
+        <option value="rupee">rupee</option>
+        <option value="master card">master card</option>
+    </select> 
+    </p>
+    <P>Card Number : * <input type="number" name="card_number" id="card_number" required></P>
+<p>Expiry Date : <input type="date" name="exp" id="exp"></p>
+<p>CVV : * <input type="password" name="cvv" id="cvv" required></p>
+<input type="checkbox" name="T&C" id="T&C" required> <span>Accept Terms and Condition</span> <br><br>
+<input type="submit" value="Pay now"> <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>
