@@ -1,0 +1,91 @@
+div {
+  height: 300px;
+  width: 250px;
+  border: 1px solid black;
+}
+.linergradient1 {
+  background-image: linear-gradient(red, green);
+}
+.linergradient2 {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(222, 183, 40, 0.807),
+    rgb(255, 255, 255),
+    rgb(56, 136, 12)
+  );
+}
+.linergradient3 {
+  background-image: linear-gradient(to bottom right, rgb(255, 0, 0), black);
+}
+.radialgradient1 {
+  background-image: radial-gradient(yellow 15%, red);
+}
+.radialgradient2 {
+  background-image: radial-gradient(circle, blue, green);
+}
+.radialgradient3 {
+  background-image: radial-gradient(aqua, rgb(0, 102, 255));
+}
+.conicgradient1 {
+  background-image: conic-gradient(red, yellow, green);
+}
+.conicgradient2 {
+  background-image: conic-gradient(from 90deg, red, green, blue, black);
+}
+.conicgradient3 {
+  background-image: repeating-conic-gradient(blue 10%, black 20%);
+  border-radius: 10px;
+}
+.head {
+  text-align: center;
+}
+.wrapper {
+  width: 96vw;
+  height: 1200px;
+  background-color: yellow;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: aqua;
+  border: 1px solid black;
+  display: inline-block;
+}
+#box3 {
+  position: relative;
+  right: 160px;
+  top: 180px;
+}
+/* #box4{
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+} */
+/* #box2{
+    position: absolute;
+    right: 20px;
+} */
+#box1,
+#box4 {
+  position: sticky;
+  top: 1px;
+}
+.trans {
+  width: 150px;
+  height: 150px;
+  background-color: aqua;
+  margin-left: 180px;
+  margin-bottom: 50px;
+}
+#boxC {
+  transform: translate(100px);
+}
+#boxB {
+  transform: rotate(50deg);
+}
+#boxA {
+  transform: skew(45deg);
+}
+#boxD {
+  transform: scale(2);
+}
