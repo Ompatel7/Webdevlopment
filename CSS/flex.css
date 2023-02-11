@@ -1,0 +1,42 @@
+.contenor{
+   width: 100%;
+   height: 400px;
+   border: 1px solid green; 
+   /* This is Flax container property it workes on the whole contanor*/
+   display: flex;
+   /* flex-direction: row-reverse; */
+   flex-wrap: wrap;
+   /* flex-flow: row-reverse wrap-reverse; */
+   /* justify-content: space-between; */
+   /* justify-content: space-around; */
+   /* justify-content: space-evenly; */
+   justify-content: center;
+   align-items: center;
+   align-items: stretch;
+   /* align-items: flex-start; */
+   /* align-items: flex-end; */
+   gap: 10px;
+   /* align-items: baseline; */  
+   /* align-content:stretch; */
+}
+.box{
+    border: 1px solid black;
+    background-color: aqua;
+    
+}
+#box1{
+    /* This is align item property it works only on 1 elemant */
+    order: 2;
+    flex-grow: 1;
+    /* flex-shrink: 3; */
+}
+#box3{
+    order: 3;
+}
+#box2{
+    flex-grow: 1;
+    /* flex-shrink: 3; */
+}
+#box4{
+
+}
