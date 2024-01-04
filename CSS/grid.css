@@ -1,31 +1,88 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.contanor{
-    background-color: brown;
-    border: 3px solid black;
+.container{
     height: 500px;
+    width: 800px;
+    border: 1px solid black;
+    background-color: blueviolet;
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: 40px 1fr 40px;
-    gap: 2px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 40px 350px 40px;
+    text-align: center;
+    color: white;
 
+    grid-template-areas: 
+    "hd hd hd "
+    "as side cont"
+    "ft ft ft";
 }
 .box{
-    border: 3px solid black;
-    background-color: aqua;
-    /* height: 80px; */
-    /* width: 80px; */
+    border: 1px solid black;
+    background-color: blue;
 }
-#box1,#box4{
-    /* grid-column-start: 1; */
-    /* grid-column-end: 5; */
-    grid-column: 1/4;
+#header{
+    grid-area: hd;
 }
-#box3{
-    /* grid-column: 2/4; */
+#aside{
+    grid-area: as;
+}
+#sidebar{
+    grid-area: side;
+}
+#content{
+    grid-area: cont;
+}
+#footer{
+    grid-area: ft;
+}
+@media (max-width:800px) {
+    .container{
+        height: 500px;
+        width: 800px;
+        border: 1px solid black;
+        background-color: blueviolet;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 40px 350px 40px;
+        text-align: center;
+        color: white;
+
+        grid-template-areas: 
+        "hd hd"
+        "side cont"
+        "ft ft";
+
+    }
+    .box{
+        background-color: aqua;
+    }
+    #aside{
+        display: none;
+    }
+}
+@media (min-width:400px) and (max-width:600px) {
+    .container{
+        height: 500px;
+        width: 800px;
+        border: 1px solid black;
+        background-color: blueviolet;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 40px 180px 180px 40px;
+        text-align: center;
+        color: white;
+
+        grid-template-areas: 
+        "hd"
+        "as"
+        "cont"
+        "ft";
+    }
+    .box{
+        background-color:darkgreen;
+    }
+    #aside{
+        display:initial;
+    }
+    #sidebar{
+        display: none;
+    }
 }
