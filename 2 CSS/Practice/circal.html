@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+    height: 450px;
+    width: 450px;
+    border: 2px solid black;
+    text-align: center;
+    position: relative;
+    left: 500px;
+    animation: rotate 5s infinite alternate;
+}
+.text{
+    position: relative;
+    top: 150px;
+    font-weight:900;
+    font-size:larger;
+    font-family: sans-serif;
+    color: white;
+}
+@keyframes rotate {
+    0%{
+    background-image: linear-gradient(to bottom right, green 10%, black );
+        transform: rotate(0deg);
+    }
+    100%{
+    background-image: linear-gradient(to bottom right, red ,black);
+        border-radius: 100%;
+        transform: rotate(360deg);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="box"><p class="text">Good Morning</p></div>
+</body>
+</html>
